@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/goiteens-events-js/static/css/main.1426e3f8.css",
+    "main.js": "/goiteens-events-js/static/js/main.aeb119c5.js",
+    "index.html": "/goiteens-events-js/index.html",
+    "main.1426e3f8.css.map": "/goiteens-events-js/static/css/main.1426e3f8.css.map",
+    "main.aeb119c5.js.map": "/goiteens-events-js/static/js/main.aeb119c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1426e3f8.css",
+    "static/js/main.aeb119c5.js"
+  ]
+}
