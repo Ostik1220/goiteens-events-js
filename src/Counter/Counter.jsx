@@ -13,6 +13,7 @@ class Counter extends Component {
     };
 
     plus = () => {
+        console.log(this.props.data);
         // this.state.value = this.state.value + 1; неправильно так робити
         this.setState({
             value: 5

@@ -7,6 +7,8 @@ import Counter from './Counter/Counter';
 
 
 function App() {
+
+  const someData = '2025.10.25'
   console.log(upcomingEvents);
   return (
     <div className="App">
@@ -17,7 +19,7 @@ function App() {
         */}
         
         {/* lesson 7 */}
-        <Counter />
+        <Counter data={someData}/>
     </div>
   );
 }
