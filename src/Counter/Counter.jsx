@@ -15,9 +15,10 @@ class Counter extends Component {
     plus = () => {
         console.log(this.props.data);
         // this.state.value = this.state.value + 1; неправильно так робити
-        this.setState({
-            value: 5
+         this.setState((prevState) =>{
+            return { value: prevState.value + 1 }   
         })
+        this.props.getData(this.state.value);
     }  
 
     minus = () => {
@@ -29,6 +30,9 @@ class Counter extends Component {
         this.setState((prevState) =>{
             return { value: prevState.value - 1 }   
         })
+
+                this.props.getData(this.state.value);
+
     }   
 
 
@@ -37,7 +41,7 @@ class Counter extends Component {
         return (
             <div>
                 <button onClick={this.plus}>+</button>
-                <h3>{this.state.value}</h3>
+
                 <button onClick={this.minus}>-</button>
             </div>
         );
